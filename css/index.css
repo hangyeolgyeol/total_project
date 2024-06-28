@@ -252,7 +252,13 @@ ul.header_nav > li.nav_li:hover {
   border: 1px solid #a9a9a9;
 }
 
-.pro_desc {
+.project_netflex_box .pro_desc {
+  position: absolute;
+  width: 60%;
+  font-size: 16px;
+  bottom: -30%;
+}
+.project_used_box .pro_desc {
   position: absolute;
   width: 60%;
   font-size: 16px;

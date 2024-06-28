@@ -1,0 +1,231 @@
+.modal {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999999999999;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow-y: hidden;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal_item_popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  background-color: #fff;
+
+  transform: translate(-50%, -50%);
+
+  width: 1126px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+.modal_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99999999;
+
+  width: 36px;
+  height: 36px;
+  background: #141414;
+  border: none;
+  border-radius: 50%;
+
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+
+  cursor: pointer;
+}
+/* modal_banner */
+.modal_banner {
+  position: relative;
+}
+
+.modal_banner_box {
+  padding-bottom: 56%;
+
+  
+}
+.modal_banner_title {
+  position: absolute;
+  left: 30px;
+  bottom: 20%;
+  width: 45%;
+}
+.modal_banner_title > img {
+  width: 100%;
+}
+.modal .play_btn_box {
+  left: 7%;
+  bottom: 7%;
+  height: 7%;
+}
+.modal .play_btn {
+  width: 1.3vw;
+  padding-right: 1vw;
+}
+.modal .play_txt {
+  font-size: 1.1vw;
+}
+.modal_desc {
+  width: 100%;
+  padding: 48px;
+  box-sizing: border-box;
+  color: #fff;
+  background: #141414;
+}
+
+
+
+/* 반응형----------------------------------------- */
+
+/* 1350 */
+@media screen and (max-width: 1350px) {
+  
+}
+
+/* 1200 분기점(노트북) */
+@media screen and (max-width: 1200px) {
+
+
+}
+
+/* 화면에 꽉차서 따로 조정하는 modal_popip창 */
+@media screen and (max-width: 1200px) {
+  .modal_item_popup {
+    width: 1006px;
+  }
+
+}
+
+/* 1024 분기점(아이패드 프로, 옛날 모니터) */
+@media screen and (max-width: 1024px) {
+  .modal_item_popup {
+    width: 906px;
+  }
+}
+
+
+@media screen and (max-width: 930px) {
+  .modal_item_popup {
+    width: 806px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .modal_item_popup {
+    width: 706px;
+  }
+}
+
+/* 768 분기점(태블릿) */
+@media screen and (max-width: 768px) {
+  .modal_item_popup {
+    width: 606px;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  .modal_item_popup {
+    width: 506px;
+    top: 45%;
+  }
+}
+
+
+/* 530 search 박스 길이 줄이기 */
+@media screen and (max-width: 530px){
+  .modal_item_popup {
+      width: 456px;
+  }
+}
+
+
+/* 480 분기점(핸드폰) */
+@media screen and (max-width: 480px) {
+  .modal_item_popup {
+    top: 40%;
+  }
+}
+
+/* 470 분기점 */
+@media screen and (max-width: 470px){
+  .modal_item_popup {
+      width: 406px;
+      font-size: 14px;
+  }
+  .modal_desc {
+    padding: 38px;
+  }
+}
+
+/* 440 분기점 */
+@media screen and (max-width: 440px) {
+  .modal_desc {
+    padding: 28px;
+  }
+}
+
+/* 420 분기점 */
+@media screen and (max-width: 420px) {
+  .modal_item_popup {
+    width: 356px;
+  }
+  .modal_close {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+}
+
+/* 360 분기점 */
+@media screen and (max-width: 360px) {
+  .modal_item_popup {
+    width: 306px;
+    top: 35%;
+    font-size: 12px;
+  }
+  .modal_desc {
+    padding: 18px;
+  }
+}
+
+/* 310 분기점 */
+@media screen and (max-width: 320px) {
+  .modal_item_popup {
+    width: 266px;
+    width: 256px;
+  }
+}
+
+/* 280 분기점(핸드폰) */
+@media screen and (max-width: 280px) {
+  .modal_item_popup {
+    top: 30%;
+    width: 246px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .modal_desc {
+    padding: 20px;
+  }
+
+  .modal_close {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+}
