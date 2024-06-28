@@ -253,8 +253,10 @@ ul.header_nav > li.nav_li:hover {
 }
 
 .pro_desc {
+  position: absolute;
   width: 60%;
   font-size: 16px;
+  bottom: -20%;
 }
 .project_desc {
   font-size: 14px;
@@ -283,6 +285,7 @@ ul.header_nav > li.nav_li:hover {
   column-gap: 20px;
   row-gap: 30px;
   height: 100%;
+  justify-content: center;
 }
 .skill_img_box {
   width: calc((100% - 20px) / 3);
@@ -292,7 +295,6 @@ ul.header_nav > li.nav_li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ddd;
 }
 .skill_img_box > img {
   width: 40%;
@@ -300,14 +302,19 @@ ul.header_nav > li.nav_li:hover {
 
 
 /* *****sec_contact***** */
-.contact{
-
+.contact{  }
+.con_flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
 .email_box {
-  position: absolute;
-  left: 150px;
-  top: 20%;
-  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  /* row-gap: 50px; */
+  column-gap: 70px;
 }
 .email_img {
   width: 200px;
@@ -316,15 +323,16 @@ ul.header_nav > li.nav_li:hover {
   width: 100%;
 }
 .email_desc {
+  font-size: 28px;
   margin-top: 25px;
 }
 
 
 .kakao_talk_box {
-  position: absolute;
-  right: 150px;
-  top: 20%;
-  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  /* row-gap: 50px; */
+  column-gap: 70px;
 }
 .kakao_address {
   display: block;
@@ -338,6 +346,7 @@ ul.header_nav > li.nav_li:hover {
   width: 100%;
 }
 .kakao_talk_desc {
+  font-size: 28px;
   margin-top: 25px;
 }
 
