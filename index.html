@@ -8,10 +8,15 @@
 
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/modal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
   <script src="./js/index.js"></script>
+  <script src="./js/modal.js"></script>
   
   
-  <!-- <script src="../js/new_index.js"></script> -->
+  <!-- <script src=".../js/new_index.js"></script> -->
 </head>
 <body>
   <div id="wrap">
@@ -19,7 +24,7 @@
     <header id="header">
       <div class="content_area header_flex">
         <div class="logo">
-          <a href="new_index.html"><h1>hangyeol</h1></a>
+          <a href="#"><h1>hangyeol</h1></a>
         </div>
 
         <ul class="header_nav">
@@ -101,74 +106,98 @@
           <!-- sec_project -->
           <section class="sec project" id="project">
 
-            <div class="project_used_box project_pan item">
-              <div class="pro_flex">
-                <div class="project_used_img_box pro_img_box_1">
-                  <img src="./img/used_1.png" alt="used 화면" class="used_img">
-                </div>
-                <div class="project_used_img_box2 pro_img_box_2">
-                  <img src="./img/used_phone.png" alt="used 화면" class="used_img_phone">
-                </div>
-                <div class="project_used_desc pro_desc">
-                  <h1 class="project_title">USED</h1>
-                  <div class="project_desc">
-                    중고나라 사이트를 벤치마킹해 만든 used 프로젝트 입니다. Spring과
-                    MySql을 사용해서 DB에 상품 정보를 저장한후 DB에서 정보를 가져오는 방식으로
-                    페이지를 제작하였고 로그인, 회원가입 페이지를 실제로 구현 가능하게 만들었습니다.
-                  </div>
-                  <div class="project_link">
-                    <a href="https://github.com/hangyeolgyeol/used">Used Git 링크</a>
-                  </div>
-                </div>
-              </div>
+            <div class="project_head">
+              <div class="project_title">project total</div>
+              <div class="project_title_line"></div>
             </div>
 
-            <div class="next_page"> → </div>
+            <div class="project_pan">
 
-            <div class="project_netflex_box project_pan item">
-              <div class="pro_flex">
-                <div class="project_netflex_img_box pro_img_box_1">
-                  <img src="./img/넷플릭스_메인.png" alt="netflex 화면" class="netflex_img">
-                </div>
-                <div class="project_netflex_img_box2 pro_img_box_2">
-                  <img src="./img/넷플릭스_폰.png" alt="netflex 화면" class="netflex_img_phone">
-                </div>
-                <div class="project_netflex_desc pro_desc">
-                  <h1 class="project_title">NETFLEX</h1>
-                  <div class="project_desc">
-                    넷플릭스 화면을 구성해봤던 프로젝트입니다. html과 css, JavaScript, JQuery들을 이용해 페이지를 제작하였고, 영화 요소를 클릭하면 해당 영화에 맞는 모던 창을 띄우게 했습니다. 또한 헤더의 메뉴안에 있는 카테고리를 클릭할 때마다 카테고리에 해당하는 영화들이
-                    화면에 뜰 수 있게 설정해놨습니다.
-                  </div>
-                  <div class="project_link">
-                    <a href="https://0hangyeol0.github.io/NETFLIX_portfolio/html/index.html">넷플릭스 Git 링크</a>
-                  </div>
-                </div>
+              <div class="item" id="project_netflex_box">
+                <img src="./img/넷플릭스_메인.png" alt="넷플릭스">
+                <div class="gray_pan"></div>
               </div>
+
+              <div class="item" id="project_used_box">
+                <img src="./img/used_1.png" alt="used">
+                <div class="gray_pan"></div>
+              </div>
+
             </div>
-            
           </section>
 
           <!-- sec_skill -->
           <section class="sec skill">
             <div class="sec_skill_desc sec_desc">
+              <span>저는 지금 이런게 가능합니다</span>
+              <div class="skill_box_title">SKILLS
+              </div>
+              <div class="project_title_line"></div>
+
               <ul class="skill_box">
-                <li class="skill_img_box">
-                  <img src="./img/html.png" alt="html">
+
+                <li id="Java">
+                  <div class="skill_name">Java</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
                 </li>
-                <li class="skill_img_box">
-                  <img src="./img/css.png" alt="css">
+                <li id="Spring">
+                  <div class="skill_name">Spring</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
                 </li>
-                <li class="skill_img_box">
-                  <img src="./img/java.png" alt="java">
+                <li id="Html5">
+                  <div class="skill_name">Html5</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
                 </li>
-                <li class="skill_img_box">
-                  <img src="./img/js.png" alt="JavaScript">
+                <li id="Css3">
+                  <div class="skill_name">Css3</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
                 </li>
-                <li class="skill_img_box">
-                  <img src="./img/Jquery.png" alt="JQuery">
+                <li id="JavaScript">
+                  <div class="skill_name">JavaScript</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
                 </li>
-                <li class="skill_img_box">
-                  <img src="./img/mysql.png" alt="MySql">
+                <li id="Jquery">
+                  <div class="skill_name">Jquery</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="MySql">
+                  <div class="skill_name">MySql</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="MyBatis">
+                  <div class="skill_name">MyBatis</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="GirHub">
+                  <div class="skill_name">GirHub</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
                 </li>
               </ul>
             </div>
@@ -176,10 +205,10 @@
 
           <!-- sec_contact -->
           <section class="sec contact">
-            <div class="con_flex">
+            <!-- <div class="con_flex"> -->
                 <div class="email_box">
                   <div class="email_img">
-                    <img src="./img/email.png" alt="">
+                    <img src="./img/email.png" alt="이메일">
                   </div>
                   <div class="email_desc">
                     <b>hangyeol120@naver.com</b>
@@ -188,15 +217,38 @@
 
                 <div class="kakao_talk_box">
                   <div class="kakao_talk_img">
-                    <a href="https://open.kakao.com/o/sDGghkxg" class="kakao_address">
-                      <img src="./img/free-icon-kakao-talk-3669973.png" alt="">
+                    <a href="https://open.kakao.com/o/sDGghkxg" class="kakao_href">
+                      <img src="./img/kakao_talk.png" alt="카카오톡">
                     </a>
                   </div>
                   <div class="kakao_talk_desc">
                     <b>hangyeol090</b>
                   </div>
                 </div>
-            </div>
+
+                <div class="address_box">
+                  <div class="address_img">
+                    <img src="./img/icon_map.png" alt="주소">
+                  </div>
+                  <div class="address_desc">
+                    <b>경기도 시흥시 월곶해안로 161번길 25</b>
+                  </div>
+                </div>
+
+                <div class="email_prototype">
+                  <div class="e_p_box e_p_name">
+                    <input type="text" placeholder="성함" id="email_input_name">
+                  </div>
+                  <div class="e_p_box e_p_email">
+                    <input type="text" placeholder="본인의 E-Mail" id="email_input_email">
+                  </div>
+                  <div class="e_p_box e_p_title">
+                    <input type="text" placeholder="제목" id="email_input_title">
+                  </div>
+                  <textarea placeholder="내용" id="email_textarea_content"></textarea>
+                  <button>메일보내기</button>
+                </div>
+            <!-- </div> -->
           </section>
 
 

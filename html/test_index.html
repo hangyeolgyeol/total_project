@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello My's Portfolio(copy)</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <script src="../js/index.js"></script>
+  <script src="../js/modal.js"></script>
+  
+  
+  <!-- <script src=".../js/new_index.js"></script> -->
+</head>
+<body>
+  <div id="wrap">
+    <!-- header 파트 -->
+    <header id="header">
+      <div class="content_area header_flex">
+        <div class="logo">
+          <a href="#"><h1>hangyeol</h1></a>
+        </div>
+
+        <ul class="header_nav">
+          <li class="nav_li">Home</li>
+          <li class="nav_li">About me</li>
+          <li class="nav_li">Project</li>
+          <li class="nav_li">Skill</li>
+          <li class="nav_li">Contact</li>
+        </ul>
+      </div>
+    </header> 
+
+    <!-- main 파트 -->
+    <main id="main">
+      <div class="content_area main_flex">
+
+        <div class="img_box">
+          <img src="../img/포폴_임시사진.jpg" alt="포폴임시사진" class="main_img">
+        </div>
+
+        <div class="sec_box">
+          <!-- sec_home -->
+          <section class="sec home">
+            <div class="sec_home_desc sec_desc">
+              <div class="sec_home_desc_title">Seo HanGyeol</div>
+              <div class="sec_home_line"></div>
+              <button class="h_project_btn">
+                <a href="#project" id="project_page">project</a>
+              </button>
+            </div>
+          </section>
+
+          <!-- sec_about -->
+          <section class="sec about">
+            <div class="sec_about_desc sec_desc">
+
+              <div class="face_img">
+                <img src="../img/이력서사진(서한결).png" alt="이력서 얼굴 사진">
+              </div>
+
+              <div class="about_pro_file">
+                <div class="about_title">
+                  <div class="about_pf">PRO FILE</div>
+                  <!-- <div class="about_line"></div> -->
+                </div>
+                <div class="my_name">⦁ 이름: 서한결</div>
+                <div class="my_age">⦁ 나이: 24세 (2000.12.04)</div>
+                <div class="my_address">⦁ 주소: 경기도 시흥시 월곶동</div>
+              </div>
+
+              <div class="about_history">
+                <div class="about_title">
+                  <div class="about_ht">HISTORY</div>
+                  <!-- <div class="about_line"></div> -->
+                </div>
+                <div class="university">⦁ 2019.03 ~ 2024.02 - 신안산대학교 졸업</div>
+                <div class="high_school">⦁ 2016.03 ~ 2019.02 - 인천남동고등학교 졸업</div>
+              </div>
+
+              <div class="about_licensc">
+                <div class="about_title">
+                  <div class="about_lc">LICENSE</div>
+                  <!-- <div class="about_line"></div> -->
+                </div>
+                ⦁ 2023.12.26 - 네트워크관리사 2급 자격증 합격
+              </div>
+
+              <div class="about_my_self">
+                <div class="about_title">
+                  <div class="about_my">MY SELF</div>
+                  <!-- <div class="about_line"></div> -->
+                </div>
+                ⦁ 안녕하세요. 백엔드 개발자가 되고 싶은 서한결입니다.<br>
+              </div>
+
+            </div> <!-- sec_about_desc -->
+          </section>
+
+          <!-- sec_project -->
+          <section class="sec project" id="project">
+
+            <div class="project_head">
+              <div class="project_title">project total</div>
+              <div class="project_title_line"></div>
+            </div>
+
+            <div class="project_pan">
+
+              <div class="item" id="project_netflex_box">
+                <img src="../img/넷플릭스_메인.png" alt="넷플릭스">
+                <div class="gray_pan"></div>
+              </div>
+
+              <div class="item" id="project_used_box">
+                <img src="../img/used_1.png" alt="used">
+                <div class="gray_pan"></div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- sec_skill -->
+          <section class="sec skill">
+            <div class="sec_skill_desc sec_desc">
+              <span>저는 지금 이런게 가능합니다</span>
+              <div class="skill_box_title">SKILLS
+              </div>
+              <div class="project_title_line"></div>
+
+              <ul class="skill_box">
+
+                <li id="Java">
+                  <div class="skill_name">Java</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="Spring">
+                  <div class="skill_name">Spring</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="Html5">
+                  <div class="skill_name">Html5</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="Css3">
+                  <div class="skill_name">Css3</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="JavaScript">
+                  <div class="skill_name">JavaScript</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="Jquery">
+                  <div class="skill_name">Jquery</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="MySql">
+                  <div class="skill_name">MySql</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="MyBatis">
+                  <div class="skill_name">MyBatis</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+                <li id="GirHub">
+                  <div class="skill_name">GirHub</div>
+                  <div class="progress">
+                    <div class="progress_bar"></div>
+                    <!-- <span>60%</span> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- sec_contact -->
+          <section class="sec contact">
+            <!-- <div class="con_flex"> -->
+                <div class="email_box">
+                  <div class="email_img">
+                    <img src="../img/email.png" alt="이메일">
+                  </div>
+                  <div class="email_desc">
+                    <b>hangyeol120@naver.com</b>
+                  </div>
+                </div>
+
+                <div class="kakao_talk_box">
+                  <div class="kakao_talk_img">
+                    <a href="https://open.kakao.com/o/sDGghkxg" class="kakao_href">
+                      <img src="../img/kakao_talk.png" alt="카카오톡">
+                    </a>
+                  </div>
+                  <div class="kakao_talk_desc">
+                    <b>hangyeol090</b>
+                  </div>
+                </div>
+
+                <div class="address_box">
+                  <div class="address_img">
+                    <img src="../img/icon_map.png" alt="주소">
+                  </div>
+                  <div class="address_desc">
+                    <b>경기도 시흥시 월곶해안로 161번길 25</b>
+                  </div>
+                </div>
+
+                <div class="email_prototype">
+                  <div class="e_p_box e_p_name">
+                    <input type="text" placeholder="성함" id="email_input_name">
+                  </div>
+                  <div class="e_p_box e_p_email">
+                    <input type="text" placeholder="본인의 E-Mail" id="email_input_email">
+                  </div>
+                  <div class="e_p_box e_p_title">
+                    <input type="text" placeholder="제목" id="email_input_title">
+                  </div>
+                  <textarea placeholder="내용" id="email_textarea_content"></textarea>
+                  <button>메일보내기</button>
+                </div>
+            <!-- </div> -->
+          </section>
+
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
